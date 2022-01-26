@@ -1,0 +1,95 @@
+Sxiv.background: black
+
+! ~/.Xresources
+XTerm*locale: false
+XTerm*utf8: true
+
+XTerm*termName:256color
+
+
+XTerm*font:     *-fixed-*-*-*-24-*
+!colore di sfondo
+XTerm*background: grey19
+
+!colore del testo
+XTerm*foreground: grey75
+
+!colore del cursore
+XTerm*cursorColor: darkorange1
+
+!niente barra di scorrimento
+XTerm*scrollBar: false
+
+! http://invisible-island.net/xterm/xterm.faq.html#tiny_menus
+!dimensione predefinita
+XTerm.vt100.geometry: 30x30
+
+!modalità UTF-8 permanente
+XTterm*utf8: 2
+
+!256 colori
+# XTerm*termName: xterm-256color
+
+!font TrueType con antialiasing
+XTerm*faceName: fixed 
+! dimensione del font precedente
+Xterm*faceSize: 28   
+ 
+Xterm*renderFont: true
+!numero di linee da mantenere nello scrollbuffer
+XTerm*saveLines: 7777
+
+!le combinazioni di tasti con Meta (Alt) vengono convertite in una sequenza ad 8-bit,
+!necessario affinché ad esempio si possa usare alt-numero per spostarsi tra le finestre in irssi
+XTerm*metaSendsEscape: true
+
+!seleziona solo il testo di una riga, omettendo gli spazi vuoti
+XTerm*highlightSelection: true
+
+!in combinazione con lopzione precedente tenta di 
+!rimuovere gli spazi in eccesso a inizio e fine riga
+XTerm*trimSelection: true
+
+!il triplo click per selezionare una riga non include il Newline
+!(\n, la sequenza che manda a capo la riga, si veda man echo) alla fine
+XTerm*cutNewline: false
+
+!abilita e specifica un attributo colore per il testo in grassetto
+
+!abilita e specifica un attributo colore per il testo sottolineato
+
+!i caratteri da includere nella selezione del testo con il doppio click
+!sono gruppi di numeri nella forma codice:valore e divisi da una virgola,
+!il 48 è arbitrario ma il manuale lo usa come esempio e ci affidiamo a questo valore
+!per aggiungere e modificare usare quindi la forma codice:48,
+!vedere man xterm | less -p 'CHARACTER CLASSES' per la tabella di riferimento
+!prendendo ad esempio il primo gruppo 33:48, 33 equivale al punto esclamativo
+ XTerm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+
+!colori personalizzati per il testo usati in vari programmi
+!da 0 a 7 per il testo normale, da 8 a 15 per il grassetto
+
+!black
+ XTerm*color0:	#171717
+ XTerm*color8:	#737373
+!red
+ XTerm*color1:	#FF5E5E
+ XTerm*color9:	#FF7878
+!green
+ XTerm*color2:	#9CE82B
+ XTerm*color10:	#9ACD32
+!yellow
+ XTerm*color3:	#F0E68C
+ XTerm*color11:	#EEE8AA
+!blue
+ XTerm*color4:	#008AFF
+ XTerm*color12:	#4F98FF
+!magenta
+ XTerm*color5:	#E88CFF
+ XTerm*color13:	#EDA6FF
+!cyan
+ XTerm*color6:	#87CEFA
+ XTerm*color14:	#B0E2FF
+!white
+ XTerm*color7:	#DCDCCC
+ XTerm*color15:	#FFFFFF

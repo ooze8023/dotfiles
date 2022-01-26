@@ -1,0 +1,12 @@
+#!/bin/bash
+read -r NUM < ~/Note/numero.txt
+
+if grep $QUTE_URL ~/Note/ytdl.txt
+then
+    echo 0
+else
+    echo "$QUTE_URL" >> ~/Note/ytdl.txt
+    let "NUM =$NUM+1"
+  echo "$NUM" > ~/Note/numero.txt
+
+fi
